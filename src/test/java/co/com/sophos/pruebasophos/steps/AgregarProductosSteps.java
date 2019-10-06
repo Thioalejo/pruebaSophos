@@ -43,8 +43,6 @@ public class AgregarProductosSteps {
     @Step
     public void ingresarAVerListaProductoAgregadoAlCarritoDeCompras(String tituloProducto) throws InterruptedException {
         menuSuperiorPage.ingresarAEnCarrito();
-        String tituloProductoCapturado = carritoDeComprasPage.validarProductoEnCarrito();
-        System.out.println("Producto encontrado: " + tituloProductoCapturado);
         if (!carritoDeComprasPage.validarProductoEnCarrito().equals(tituloProducto)) {
             assertTrue("No se visualiza el texto esperado: " + tituloProducto, false);
         }
