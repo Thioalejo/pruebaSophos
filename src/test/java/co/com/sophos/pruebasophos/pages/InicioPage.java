@@ -1,6 +1,7 @@
 package co.com.sophos.pruebasophos.pages;
 
-import constantes.ConstantesURL;
+
+import co.com.sophos.pruebasophos.constantes.ConstantesURL;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 
