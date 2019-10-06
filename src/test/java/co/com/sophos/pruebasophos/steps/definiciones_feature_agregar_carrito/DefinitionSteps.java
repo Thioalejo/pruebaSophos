@@ -21,4 +21,14 @@ public class DefinitionSteps {
     public void he_realizado_la_busqueda_de(String producto) throws Exception {
         agregarProductosSteps.buscarProducto(producto);
     }
+
+    @Cuando("^carguen la lista deberia poder agregar al carrito \"([^\"]*)\"$")
+    public void carguen_la_lista_deberia_poder_agregar_al_carrito(String productoElegido) throws Exception {
+        agregarProductosSteps.cargarProductoAlCarritoDeCompras(productoElegido);
+    }
+
+    @Entonces("^al revisar el carrito de compras deberia poder ver mi producto \"([^\"]*)\" agregado exitosamente$")
+    public void al_revisar_el_cariito_de_compras_deberia_poder_ver_mi_producto_agregado_exitosamente(String tituloProducto) throws Exception {
+       agregarProductosSteps.ingresarAVerListaProductoAgregadoAlCarritoDeCompras(tituloProducto);
+    }
 }
