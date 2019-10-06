@@ -1,5 +1,5 @@
 
-package constantes;
+package co.com.sophos.pruebasophos.constantes;
 
 /**
  *
