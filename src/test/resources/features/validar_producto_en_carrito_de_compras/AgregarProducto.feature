@@ -1,7 +1,7 @@
 # language: es
 Característica: Yo como usuario de la pagina wong,
   Quiero acceder al portal web
-  Para agragar un producto al carrito de compras
+  Para agregar un producto al carrito de compras
 
   Escenario: Agregar un producto al carrito de compras y validar que ha sido agregado exitosamente
     Dado que estoy en la pagina de compras

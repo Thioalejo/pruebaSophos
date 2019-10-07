@@ -8,7 +8,7 @@ import cucumber.api.java.es.Entonces;
 import cucumber.api.java.es.Y;
 
 public class DefinitionSteps {
-
+    //Se instancia pasos de agregar producto para llamarlos en cada metodo de definicion
     @Steps
     AgregarProductosSteps agregarProductosSteps;
 

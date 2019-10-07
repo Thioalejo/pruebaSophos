@@ -6,6 +6,7 @@ import net.thucydides.core.pages.PageObject;
 
 public class PrincipalPage extends PageObject {
 
+    //Declaracion de variables estaticas con valores de los objetos o elementos de en la pagina de princial
     private static final String BOTON_NO_GRACIAS = "onesignal-popover-cancel-button";
     private static final String BUSCADOR = "search-autocomplete-input";
 
@@ -15,12 +16,13 @@ public class PrincipalPage extends PageObject {
     @FindBy(id = BUSCADOR)
     private WebElementFacade buscador;
 
-
+    //metodo para buscar el producto
     public void buscarProducto(String producto) throws InterruptedException {
         buscador.typeAndEnter(producto);
         Thread.sleep(5000);
     }
 
+    //Metodo para dar clic al mensaje emergente mostrado al cargar la pagina
     public void darClicbotonNoGracias() {
         botonNoGracias.click();
     }

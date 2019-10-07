@@ -14,7 +14,7 @@ import static junit.framework.Assert.assertTrue;
  * @author alejo
  */
 public class AgregarProductosSteps {
-
+    // Se instancian clases de paginas para usar sus metodos correspondientes
     private InicioPage inicioPage;
     private PrincipalPage principalPage;
     private ListaDeProductosPage listaDeProductosPage;
@@ -22,6 +22,7 @@ public class AgregarProductosSteps {
     private MenuSuperiorPage menuSuperiorPage;
     private CarritoDeComprasPage carritoDeComprasPage;
     
+    //Pasos realizados para cumplir con cada solicitud de las definiciones "DefinitionSteps.java"
     @Step
     public void ingresarAPaginaInicial() throws InterruptedException {
         inicioPage.open();
